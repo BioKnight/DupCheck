@@ -10,7 +10,12 @@ Public Class Form1
         Dim result = rootpicker.ShowDialog()
 
         If result = DialogResult.OK Then
-            MsgBox("Test")
+
         End If
     End Sub
+
+    Private Sub add_Node(Name As String, Optional parent As String = "root")
+
+    End Sub
+
 End Class

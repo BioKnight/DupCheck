@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_Scan = New System.Windows.Forms.Button()
-        Me.TreeView1 = New System.Windows.Forms.TreeView()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.trv_Folders = New System.Windows.Forms.TreeView()
+        Me.lst_Files = New System.Windows.Forms.ListBox()
         Me.btn_Delete = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -37,20 +37,20 @@ Partial Class Form1
         Me.btn_Scan.Text = "Scan Folder"
         Me.btn_Scan.UseVisualStyleBackColor = True
         '
-        'TreeView1
+        'trv_Folders
         '
-        Me.TreeView1.Location = New System.Drawing.Point(3, 1)
-        Me.TreeView1.Name = "TreeView1"
-        Me.TreeView1.Size = New System.Drawing.Size(267, 359)
-        Me.TreeView1.TabIndex = 1
+        Me.trv_Folders.Location = New System.Drawing.Point(3, 1)
+        Me.trv_Folders.Name = "trv_Folders"
+        Me.trv_Folders.Size = New System.Drawing.Size(267, 359)
+        Me.trv_Folders.TabIndex = 1
         '
-        'ListBox1
+        'lst_Files
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(290, 1)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(267, 355)
-        Me.ListBox1.TabIndex = 2
+        Me.lst_Files.FormattingEnabled = True
+        Me.lst_Files.Location = New System.Drawing.Point(290, 1)
+        Me.lst_Files.Name = "lst_Files"
+        Me.lst_Files.Size = New System.Drawing.Size(267, 355)
+        Me.lst_Files.TabIndex = 2
         '
         'btn_Delete
         '
@@ -67,8 +67,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(562, 392)
         Me.Controls.Add(Me.btn_Delete)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.TreeView1)
+        Me.Controls.Add(Me.lst_Files)
+        Me.Controls.Add(Me.trv_Folders)
         Me.Controls.Add(Me.btn_Scan)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -77,7 +77,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents btn_Scan As Button
-    Friend WithEvents TreeView1 As TreeView
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents trv_Folders As TreeView
+    Friend WithEvents lst_Files As ListBox
     Friend WithEvents btn_Delete As Button
 End Class
