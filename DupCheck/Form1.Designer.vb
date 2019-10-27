@@ -26,6 +26,7 @@ Partial Class Form1
         Me.trv_Folders = New System.Windows.Forms.TreeView()
         Me.lst_Files = New System.Windows.Forms.ListBox()
         Me.btn_Delete = New System.Windows.Forms.Button()
+        Me.btn_Folder_Delete = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_Scan
@@ -61,11 +62,21 @@ Partial Class Form1
         Me.btn_Delete.Text = "Delete"
         Me.btn_Delete.UseVisualStyleBackColor = True
         '
+        'btn_Folder_Delete
+        '
+        Me.btn_Folder_Delete.Location = New System.Drawing.Point(195, 366)
+        Me.btn_Folder_Delete.Name = "btn_Folder_Delete"
+        Me.btn_Folder_Delete.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Folder_Delete.TabIndex = 4
+        Me.btn_Folder_Delete.Text = "Delete"
+        Me.btn_Folder_Delete.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(562, 392)
+        Me.Controls.Add(Me.btn_Folder_Delete)
         Me.Controls.Add(Me.btn_Delete)
         Me.Controls.Add(Me.lst_Files)
         Me.Controls.Add(Me.trv_Folders)
@@ -80,4 +91,5 @@ Partial Class Form1
     Friend WithEvents trv_Folders As TreeView
     Friend WithEvents lst_Files As ListBox
     Friend WithEvents btn_Delete As Button
+    Friend WithEvents btn_Folder_Delete As Button
 End Class
